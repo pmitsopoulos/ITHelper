@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.Models.NetworkModels
 {
+    /// <summary>
+    /// This Entity has the purpose of representing
+    /// the results of the MAC Vendor API
+    /// </summary>
     public class Vendor
     {
         public string Name { get; set; }

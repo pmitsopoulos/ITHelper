@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ITHelper.Domain
+namespace ITHelper.Application.DTOs.IssueTrackerDTOs.SystemContactDTOs
 {
-    public class BaseDomainEntity
+    public class UpdateSystemContactDto : BaseDto
     {
-        public int Id { get; set; }
     }
 }

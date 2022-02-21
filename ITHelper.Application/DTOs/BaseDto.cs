@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ITHelper.Domain
+namespace ITHelper.Application.DTOs
 {
-    public class BaseDomainEntity
+    public class BaseDto
     {
         public int Id { get; set; }
     }
