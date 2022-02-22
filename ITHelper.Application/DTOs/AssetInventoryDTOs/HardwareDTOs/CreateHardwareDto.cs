@@ -11,6 +11,8 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs
         public CreateHardwareDto()
         {
             InitializationDate = DateTime.Now;
+            IsAssigned = false;
+            IsOperational = true;
         }
         public int VendorId { get; set; }
         public int HardwareTypeId { get; set; }
@@ -22,6 +24,7 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs
         public int ContactId { get; set; }
         public string Description { get; set; }
         public string Comments { get; set; }
+        public bool IsAssigned { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using ITHelper.Application.DTOs.AssetInventoryDTOs.ConactDTOs;
+﻿using ITHelper.Application.DTOs.AssetInventoryDTOs.AssetDTOs;
+using ITHelper.Application.DTOs.AssetInventoryDTOs.ContactDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareSpecificationDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareTypeDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.VendorDTOs;
@@ -34,5 +35,9 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs
 
         public string Description { get; set; }
         public string Comments { get; set; }
+
+        public virtual AssetDto Asset { get; set; }
+
+        public bool IsAssigned { get; set; }
     }
 }

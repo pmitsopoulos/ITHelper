@@ -18,5 +18,7 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs
         public int ContactId { get; set; }
         public string Description { get; set; }
         public string Comments { get; set; }
+        public bool IsAssigned { get; set; }
+
     }
 }

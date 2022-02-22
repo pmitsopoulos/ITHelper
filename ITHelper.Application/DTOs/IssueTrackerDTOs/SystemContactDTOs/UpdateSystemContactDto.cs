@@ -8,5 +8,10 @@ namespace ITHelper.Application.DTOs.IssueTrackerDTOs.SystemContactDTOs
 {
     public class UpdateSystemContactDto : BaseDto
     {
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Comments { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

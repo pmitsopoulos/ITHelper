@@ -8,11 +8,6 @@ namespace ITHelper.Domain.IssueTrackerEntities
 {
     public class Issue : BaseDomainEntity
     {
-        public Issue()
-        {
-            DateIssued = DateTime.Now;
-            DueDate = DateIssued.AddDays(2);
-        }
 
         public int ApplicationSystemId { get; set; }
         public virtual ApplicationSystem ApplicationSystem { get; set; }

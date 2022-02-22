@@ -9,6 +9,7 @@ namespace ITHelper.Application.DTOs.IssueTrackerDTOs.IssueDTOs
 {
     public class IssueDto : BaseDto
     {
+       
         public int ApplicationSystemId { get; set; }
         public ApplicationSystemDto ApplicationSystem { get; set; }
         public DateTime DateIssued { get; set; }

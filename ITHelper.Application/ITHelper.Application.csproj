@@ -7,14 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.6" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Contracts\Identity\" />
     <Folder Include="Contracts\Infrastructure\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\AssetDTOs\Validators\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\ConactDTOs\Validators\" />
+    <Folder Include="Contracts\Persistence\NetworkPortInfo\" />
+    <Folder Include="DTOs\AssetInventoryDTOs\ContactDTOs\Validators\" />
     <Folder Include="DTOs\AssetInventoryDTOs\DepartmentDTOs\Validators\" />
     <Folder Include="DTOs\AssetInventoryDTOs\HardwareDTOs\Validators\" />
     <Folder Include="DTOs\AssetInventoryDTOs\HardwareSpecificationDTOs\Validators\" />
@@ -28,9 +31,65 @@
     <Folder Include="DTOs\NetworkPortInfoDTOs\NetworkPortInformationDTOs\Validators\" />
     <Folder Include="DTOs\NetworkPortInfoDTOs\UsageTypeDTOs\Validators\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="Features\AssetInventoryFeatures\Vendors\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Vendors\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Vendors\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Vendors\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Users\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Users\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Users\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Users\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareTypes\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareTypes\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareTypes\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareTypes\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Sites\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Sites\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Sites\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Sites\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareSpecifications\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareSpecifications\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareSpecifications\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareSpecifications\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Hardware\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Hardware\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Hardware\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Hardware\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Departments\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Departments\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Departments\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Departments\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Assets\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Assets\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Assets\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Assets\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Contacts\Handlers\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Contacts\Handlers\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\Contacts\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\Contacts\Requests\Queries\" />
+    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystems\Handlers\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystems\Handlers\Queries\" />
+    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystems\Requests\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystems\Requests\Queries\" />
+    <Folder Include="Features\IssueTrackerFeatures\SystemContacts\Handlers\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\SystemContacts\Handlers\Queries\" />
+    <Folder Include="Features\IssueTrackerFeatures\SystemContacts\Requests\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\SystemContacts\Requests\Queries\" />
+    <Folder Include="Features\IssueTrackerFeatures\Issues\Handlers\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\Issues\Handlers\Queries\" />
+    <Folder Include="Features\IssueTrackerFeatures\Issues\Requests\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\Issues\Requests\Queries\" />
+    <Folder Include="Features\NetworkFeatures\NetworkPortInfoFeatures\Assets\Handlers\Commands\" />
+    <Folder Include="Features\NetworkFeatures\NetworkPortInfoFeatures\Assets\Handlers\Queries\" />
+    <Folder Include="Features\NetworkFeatures\NetworkPortInfoFeatures\Assets\Requests\Commands\" />
+    <Folder Include="Features\NetworkFeatures\NetworkPortInfoFeatures\Assets\Requests\Queries\" />
     <Folder Include="Responses\" />
     <Folder Include="Services\" />
     <Folder Include="Profiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITHelper.Domain\ITHelper.Domain.csproj" />
   </ItemGroup>
 
 </Project>

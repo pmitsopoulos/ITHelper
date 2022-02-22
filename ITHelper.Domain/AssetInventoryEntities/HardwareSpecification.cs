@@ -15,5 +15,7 @@ namespace ITHelper.Domain.AssetInventoryEntities
         public bool SSDTypeOfHDD { get; set; }
         public int QuantityOfROM { get; set; }
         public string OS { get; set; }
+
+        public virtual Hardware Hardware { get; set; }
     }
 }

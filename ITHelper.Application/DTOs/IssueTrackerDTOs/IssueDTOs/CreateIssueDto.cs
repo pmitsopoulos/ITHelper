@@ -8,10 +8,17 @@ namespace ITHelper.Application.DTOs.IssueTrackerDTOs.IssueDTOs
 {
     public class CreateIssueDto
     {
+        public CreateIssueDto()
+        {
+            DateIssued = DateTime.Now;
+            DueDate = DateIssued.AddDays(2);
+        }
         public int ApplicationSystemId { get; set; }
         public string IssueDescription { get; set; }
         public string ActionsTaken { get; set; }
         public string SolutionComments { get; set; }
         public bool Resolved { get; set; }
+        public DateTime DateIssued { get; set; }
+        public DateTime DueDate { get; set; }
     }
 }

@@ -32,6 +32,10 @@ namespace ITHelper.Domain.AssetInventoryEntities
         public string Description { get; set; }
         public string Comments { get; set; }
 
+        public bool IsAssigned { get; set; }
+
+        public virtual Asset Asset { get; set; }
+
 
     }
 }

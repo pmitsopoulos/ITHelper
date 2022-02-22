@@ -10,4 +10,10 @@
     <ProjectReference Include="..\ITHelper.Application\ITHelper.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\AssetInventory\" />
+    <Folder Include="Repositories\IssueTracker\" />
+    <Folder Include="Repositories\NetworkPortInfo\" />
+  </ItemGroup>
+
 </Project>

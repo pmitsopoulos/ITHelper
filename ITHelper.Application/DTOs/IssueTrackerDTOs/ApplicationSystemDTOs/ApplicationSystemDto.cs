@@ -10,6 +10,10 @@ namespace ITHelper.Application.DTOs.IssueTrackerDTOs.ApplicationSystemDTOs
 {
     public class ApplicationSystemDto : BaseDto
     {
+        public ApplicationSystemDto()
+        {
+            Issues = new List<IssueDto>();
+        }
         public string Name { get; set; }
         public string Description { get; set; }
         public int SystemContactId { get; set; }

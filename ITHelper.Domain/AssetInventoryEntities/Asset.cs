@@ -9,7 +9,6 @@ namespace ITHelper.Domain.AssetInventoryEntities
     public class Asset : BaseDomainEntity
     {
 
-
         public int HardwareId { get; set; }
         public virtual Hardware Hardware { get; set; }
 

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ITHelper.Application.DTOs.AssetInventoryDTOs.ConactDTOs
+namespace ITHelper.Application.DTOs.AssetInventoryDTOs.ContactDTOs
 {
     public class UpdateContactDto : BaseDto
     {
