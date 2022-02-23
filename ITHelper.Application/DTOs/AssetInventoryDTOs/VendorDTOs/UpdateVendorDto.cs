@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.AssetInventoryDTOs.VendorDTOs
 {
-    public class UpdateVendorDto : BaseDto
+    public class UpdateVendorDto : BaseDto,IVendorDto
     { 
         public string Name { get; set; }
         public string Description { get; set; }

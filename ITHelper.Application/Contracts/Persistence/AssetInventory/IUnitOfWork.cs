@@ -10,13 +10,13 @@ namespace ITHelper.Application.Contracts.Persistence.AssetInventory
     {
         IVendorRepository VendorRepository { get; } 
         IHardwareRepository HardwareRepository { get; }
-        IHardwareSpecificationRepository hardwareSpecificationRepository { get; }
+     
         IHardwareTypeRepository hardwareTypeRepository { get; }
         IUserRepository UserRepository { get; }
         IDepartmentRepository DepartmentRepository { get; }
         ISiteRepository SiteRepository { get; }
         IContactRepository ContactRepository { get; }
-        IAssetRepository AssetRepository { get; }
+
         Task Save();
     }
 }

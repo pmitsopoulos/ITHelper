@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.NetworkPortInfoDTOs.NetworkPortInformationDTOs
 {
-    public class UpdateNetworkPortInformation : BaseDto
+    public interface INetworkPortInformationDto
     {
-
+        public string PortNumber { get; set; }
+        public string Protocol { get; set; }
+        public string UseDescription { get; set; }
     }
 }

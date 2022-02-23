@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.NetworkPortInfoDTOs.NetworkPortInformationDTOs
 {
-    public class CreateNetworkPortInformationDto
+    public class CreateNetworkPortInformationDto : INetworkPortInformationDto
     {
         public string PortNumber { get; set; }
-        public int UsageTypeId { get; set; }
-        public bool TCP { get; set; }
+        public string Protocol { get; set; }
         public string UseDescription { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.AssetInventoryDTOs.SiteDTOs
 {
-    public class CreateSiteDto
+    public class CreateSiteDto : ISiteDto
     { 
         public string Name { get; set; }
         public string Description { get; set; }

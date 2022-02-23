@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.IssueTrackerDTOs.ApplicationSystemDTOs
 {
-    public class CreateApplicationSystemDto 
+    public class CreateApplicationSystemDto : IApplicationSystemDto
     {
         public string Name { get; set; }
         public string Description { get; set; }

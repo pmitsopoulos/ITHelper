@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.AssetInventoryDTOs.ContactDTOs
 {
-    public class CreateContactDto
+    public class CreateContactDto : IContactDto
     {
         public string Name { get; set; }
         public string PhoneNumber { get; set; }

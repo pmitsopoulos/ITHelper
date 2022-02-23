@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareTypeDTOs
 {
-    public class UpdateHardwareTypeDto : BaseDto 
+    public class UpdateHardwareTypeDto : BaseDto, IHardwareTypeDto
     {
         public string Name { get; set; }
         public string Description { get; set; }

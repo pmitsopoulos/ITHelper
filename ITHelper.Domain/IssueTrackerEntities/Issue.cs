@@ -8,7 +8,7 @@ namespace ITHelper.Domain.IssueTrackerEntities
 {
     public class Issue : BaseDomainEntity
     {
-
+       
         public int ApplicationSystemId { get; set; }
         public virtual ApplicationSystem ApplicationSystem { get; set; }
         public DateTime DateIssued { get; set; }

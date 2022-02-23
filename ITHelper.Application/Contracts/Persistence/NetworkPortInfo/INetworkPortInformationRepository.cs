@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ITHelper.Domain.NetworkPortInfoEntities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.Contracts.Persistence.NetworkPortInfo
 {
-    interface INetworkPortInformationRepository
+    public interface INetworkPortInformationRepository : IGenericRepository<NetworkPortInformation>
     {
+        Task<IEnumerable<NetworkPortInformation>> GetNetworkPortInformationBySearchTerm(string searchTerm);
     }
 }

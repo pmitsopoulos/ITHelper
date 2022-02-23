@@ -16,20 +16,6 @@
   <ItemGroup>
     <Folder Include="Contracts\Identity\" />
     <Folder Include="Contracts\Infrastructure\" />
-    <Folder Include="Contracts\Persistence\NetworkPortInfo\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\ContactDTOs\Validators\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\DepartmentDTOs\Validators\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\HardwareDTOs\Validators\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\HardwareSpecificationDTOs\Validators\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\HardwareTypeDTOs\Validators\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\SiteDTOs\Validators\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\UserDTOs\Validators\" />
-    <Folder Include="DTOs\AssetInventoryDTOs\VendorDTOs\Validators\" />
-    <Folder Include="DTOs\IssueTrackerDTOs\ApplicationSystemDTOs\Validators\" />
-    <Folder Include="DTOs\IssueTrackerDTOs\IssueDTOs\Validators\" />
-    <Folder Include="DTOs\IssueTrackerDTOs\SystemContactDTOs\Validators\" />
-    <Folder Include="DTOs\NetworkPortInfoDTOs\NetworkPortInformationDTOs\Validators\" />
-    <Folder Include="DTOs\NetworkPortInfoDTOs\UsageTypeDTOs\Validators\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Features\AssetInventoryFeatures\Vendors\Handlers\Commands\" />
     <Folder Include="Features\AssetInventoryFeatures\Vendors\Handlers\Queries\" />

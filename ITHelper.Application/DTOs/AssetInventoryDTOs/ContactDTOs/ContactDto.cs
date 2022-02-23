@@ -10,6 +10,10 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.ContactDTOs
 {
     public class ContactDto : BaseDto
     {
+        public ContactDto()
+        {
+            AllHardware = new List<HardwareDto>();
+        }
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
         public string EmailAddress { get; set; }

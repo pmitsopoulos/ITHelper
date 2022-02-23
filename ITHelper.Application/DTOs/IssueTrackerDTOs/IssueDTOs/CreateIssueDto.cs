@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.IssueTrackerDTOs.IssueDTOs
 {
-    public class CreateIssueDto
+    public class CreateIssueDto : IIssueDto
     {
         public CreateIssueDto()
         {

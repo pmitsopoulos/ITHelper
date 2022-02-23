@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareTypeDTOs
 {
-    public class CreateHardwareTypeDto
+    public class CreateHardwareTypeDto : IHardwareTypeDto
     {
         public string Name { get; set; }
         public string Description { get; set; }

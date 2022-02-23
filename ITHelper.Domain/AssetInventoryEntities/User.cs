@@ -10,13 +10,12 @@ namespace ITHelper.Domain.AssetInventoryEntities
     {
         public User()
         {
-            Assets = new List<Asset>();
+            Assets = new List<Hardware>();
         }
         public string Fullname { get; set; }
 
         public string PhoneNumber { get; set; }
         public string EmailAddress { get; set; }
-        public string Description { get; set; }
 
         public int DepartmentId { get; set; }
         public virtual Department Department { get; set; }
@@ -24,6 +23,6 @@ namespace ITHelper.Domain.AssetInventoryEntities
         public int SiteId { get; set; }
         public virtual Site Site { get; set; }
 
-        public ICollection<Asset> Assets { get; set; }
+        public ICollection<Hardware> Assets { get; set; }
     }
 }

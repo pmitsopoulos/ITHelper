@@ -12,13 +12,13 @@ namespace ITHelper.Domain.AssetInventoryEntities
         public Department()
         {
             Users = new List<User>();
-            Assets = new List<Asset>();
+            Assets = new List<Hardware>();
         }
         public string Name { get; set; }
 
         public string Description { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
-        public virtual ICollection<Asset> Assets { get; set; }
+        public virtual ICollection<Hardware> Assets { get; set; }
     }
 }

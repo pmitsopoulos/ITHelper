@@ -1,4 +1,4 @@
-﻿using ITHelper.Application.DTOs.NetworkPortInfoDTOs.UsageTypeDTOs;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +10,7 @@ namespace ITHelper.Application.DTOs.NetworkPortInfoDTOs.NetworkPortInformationDT
     public class NetworkPortInformationDto : BaseDto
     {
         public string PortNumber { get; set; }
-        public int UsageTypeId { get; set; }
-        public UsageTypeDto UsageType { get; set; }
-        public bool TCP { get; set; }
+        public string Protocol { get; set; }
         public string UseDescription { get; set; }
     }
 }

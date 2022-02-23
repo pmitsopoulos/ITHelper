@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.AssetInventoryDTOs.ContactDTOs
 {
-    public class UpdateContactDto : BaseDto
+    public class UpdateContactDto : BaseDto, IContactDto
     {
         public string Name { get; set; }
         public string PhoneNumber { get; set; }

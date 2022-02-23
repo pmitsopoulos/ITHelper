@@ -1,7 +1,9 @@
-﻿using ITHelper.Application.DTOs.AssetInventoryDTOs.AssetDTOs;
+﻿
 using ITHelper.Application.DTOs.AssetInventoryDTOs.ContactDTOs;
-using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareSpecificationDTOs;
+using ITHelper.Application.DTOs.AssetInventoryDTOs.DepartmentDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareTypeDTOs;
+using ITHelper.Application.DTOs.AssetInventoryDTOs.SiteDTOs;
+using ITHelper.Application.DTOs.AssetInventoryDTOs.UserDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.VendorDTOs;
 using System;
 using System.Collections.Generic;
@@ -27,17 +29,21 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs
 
         public DateTime InitializationDate { get; set; }
 
-        public int HardwareSpecificationId { get; set; }
-        public virtual HardwareSpecificationDto HardwareSpecification { get; set; }
-
         public int ContactId { get; set; }
         public virtual ContactDto Contact { get; set; }
 
         public string Description { get; set; }
         public string Comments { get; set; }
 
-        public virtual AssetDto Asset { get; set; }
+        public int UserId { get; set; }
+        public virtual UserDto User { get; set; }
 
-        public bool IsAssigned { get; set; }
+        public int DepartmentId { get; set; }
+        public virtual DepartmentDto Department { get; set; }
+        public int SiteId { get; set; }
+        public virtual SiteDto Site { get; set; }
+
+        public DateTime DateAssigned { get; set; }
+        public DateTime DiscontinueDate { get; set; }
     }
 }

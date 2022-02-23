@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.DTOs.IssueTrackerDTOs.ApplicationSystemDTOs
 {
-    public class UpdateApplicationSystemDto : BaseDto
+    public class UpdateApplicationSystemDto : BaseDto, IApplicationSystemDto
     {
         public string Name { get; set; }
         public string Description { get; set; }
