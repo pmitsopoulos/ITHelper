@@ -19,7 +19,7 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs.Validators
             RuleFor(h => h.SiteId)
                 .NotEqual(default(int))
                 .When(h1 => h1.DepartmentId != default)
-                .WithMessage("A site must be selected on order to assign an asset to a department.");
+                .WithMessage("A site must be selected to assign an asset to a department.");
 
             RuleFor(h => h.DepartmentId)
                 .NotEqual(default(int))
