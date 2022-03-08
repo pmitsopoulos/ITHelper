@@ -2,7 +2,7 @@
 
 using ITHelper.Application.DTOs.AssetInventoryDTOs.DepartmentDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs;
-using ITHelper.Application.DTOs.AssetInventoryDTOs.SiteDTOs;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +25,6 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.UserDTOs
 
         public int DepartmentId { get; set; }
         public virtual DepartmentDto Department { get; set; }
-
-        public int SiteId { get; set; }
-        public virtual SiteDto Site { get; set; }
-
         public ICollection<HardwareDto> Assets { get; set; }
     }
 }

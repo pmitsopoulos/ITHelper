@@ -13,6 +13,5 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.UserDTOs
         public string PhoneNumber { get; set; }
         public string EmailAddress { get; set; }
         public int DepartmentId { get; set; }
-        public int SiteId { get; set; }
     }
 }

@@ -10,6 +10,5 @@ namespace ITHelper.Application.Contracts.Persistence.NetworkPortInfo
     public interface INetworkPortInformationRepository : IGenericRepository<NetworkPortInformation>
     {
         Task Save();
-        Task<IEnumerable<NetworkPortInformation>> GetNetworkPortInformationBySearchTerm(string searchTerm);
     }
 }

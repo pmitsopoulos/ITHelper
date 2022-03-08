@@ -15,26 +15,16 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs.Validators
         public AssignHardwareDtoValidator(IHardwareRepository hardwareRepository)
         {
             this.hardwareRepository = hardwareRepository;
-            
-            RuleFor(h => h.SiteId)
-                .NotEqual(default(int))
-                .When(h1 => h1.DepartmentId != default)
-                .WithMessage("A site must be selected to assign an asset to a department.");
 
-            RuleFor(h => h.DepartmentId)
-                .NotEqual(default(int))
-                .When(h1 => h1.SiteId != default)
-                .WithMessage("A department must be selected to assign this asset to your selected site.");
-
-            RuleFor(h => h.SiteId)
+            RuleFor(h => h.UserId)
                 .Equal(default(int))
-                .When(h1 => h1.UserId != default)
-                .WithMessage("To assign an asset to a user the department and site selections must be blank");
+                .When(h1 => h1.DepartmentId != default)
+                .WithMessage("To assign an asset to a department the user selection must be blank");
 
             RuleFor(h => h.DepartmentId)
                .Equal(default(int))
                 .When(h1 => h1.UserId != default)
-                .WithMessage("To assign an asset to a user the department and site selections must be blank");
+                .WithMessage("To assign an asset to a user the department selection must be blank");
         }
     }
 }

@@ -28,7 +28,7 @@ namespace ITHelper.Application.Features.NetworkFeatures.NetworkPortInfoFeatures.
         public async Task<List<NetworkPortInformationDto>> Handle(GetNetworkPortInformationBySearchTermRequest request, CancellationToken cancellationToken)
         {
             var netoworkPortInfo = await networkPortInformationRepository
-                .GetNetworkPortInformationBySearchTerm(request.SearchTerm);
+                .GetBySearchTermAsync(request.SearchTerm);
 
             if(netoworkPortInfo == null)
             {

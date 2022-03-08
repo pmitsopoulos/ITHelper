@@ -14,5 +14,7 @@ namespace ITHelper.Application.Contracts.Persistence
         Task UpdateAsync (T entity);
         Task CreateAsync (T entity);
         Task <bool> Exists(int id);
+
+        Task <IEnumerable<T>> GetBySearchTermAsync(string searchTerm);
     }
 }

@@ -3,7 +3,7 @@ using ITHelper.Application.DTOs.AssetInventoryDTOs.ContactDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.DepartmentDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareTypeDTOs;
-using ITHelper.Application.DTOs.AssetInventoryDTOs.SiteDTOs;
+
 using ITHelper.Application.DTOs.AssetInventoryDTOs.UserDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.VendorDTOs;
 using ITHelper.Domain.AssetInventoryEntities;
@@ -42,12 +42,6 @@ namespace ITHelper.Application.Profiles.AssetInventoryProfiles
             CreateMap<HardwareType, HardwareTypeDto>().ReverseMap();
             CreateMap<HardwareType, CreateHardwareTypeDto>().ReverseMap();
             CreateMap<Hardware, UpdateHardwareTypeDto>().ReverseMap();
-            #endregion
-
-            #region SiteMappings
-            CreateMap<Site, SiteDto>().ReverseMap();
-            CreateMap<Site, CreateSiteDto>().ReverseMap();
-            CreateMap<Site, UpdateSiteDto>().ReverseMap();
             #endregion
 
             #region UserMappings

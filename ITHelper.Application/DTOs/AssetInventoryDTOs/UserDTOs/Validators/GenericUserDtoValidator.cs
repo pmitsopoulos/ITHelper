@@ -17,7 +17,6 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.UserDTOs.Validators
             this.userRepository = userRepository;
             RuleFor(u => u.Fullname).NotNull().NotEmpty().WithMessage("The full name of the user is required.");
             RuleFor(u => u.DepartmentId).NotEqual(default(int)).WithMessage("The user needs to be registered on a department");
-            RuleFor(u => u.SiteId).NotEqual(default(int)).WithMessage("The user needs to be registered on a site");
             RuleFor(u => u.PhoneNumber).NotEmpty().NotNull().WithMessage("The phone number field is required");
             RuleFor(u => u.PhoneNumber).NotEmpty().NotNull().WithMessage("The email field is required");
         }

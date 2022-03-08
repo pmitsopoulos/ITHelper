@@ -17,55 +17,6 @@
   <ItemGroup>
     <Folder Include="Contracts\Identity\" />
     <Folder Include="Contracts\Infrastructure\" />
-    <Folder Include="Features\AssetInventoryFeatures\Vendors\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Vendors\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Vendors\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Vendors\Requests\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Users\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Users\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Users\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Users\Requests\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\HardwareTypes\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\HardwareTypes\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\HardwareTypes\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\HardwareTypes\Requests\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Sites\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Sites\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Sites\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Sites\Requests\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\HardwareSpecifications\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\HardwareSpecifications\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\HardwareSpecifications\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\HardwareSpecifications\Requests\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Hardware\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Hardware\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Hardware\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Hardware\Requests\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Departments\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Departments\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Departments\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Departments\Requests\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Assets\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Assets\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Assets\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Assets\Requests\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Contacts\Handlers\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Contacts\Handlers\Queries\" />
-    <Folder Include="Features\AssetInventoryFeatures\Contacts\Requests\Commands\" />
-    <Folder Include="Features\AssetInventoryFeatures\Contacts\Requests\Queries\" />
-    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystems\Handlers\Commands\" />
-    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystems\Handlers\Queries\" />
-    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystems\Requests\Commands\" />
-    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystems\Requests\Queries\" />
-    <Folder Include="Features\IssueTrackerFeatures\SystemContacts\Handlers\Commands\" />
-    <Folder Include="Features\IssueTrackerFeatures\SystemContacts\Handlers\Queries\" />
-    <Folder Include="Features\IssueTrackerFeatures\SystemContacts\Requests\Commands\" />
-    <Folder Include="Features\IssueTrackerFeatures\SystemContacts\Requests\Queries\" />
-    <Folder Include="Features\IssueTrackerFeatures\Issues\Handlers\Commands\" />
-    <Folder Include="Features\IssueTrackerFeatures\Issues\Handlers\Queries\" />
-    <Folder Include="Features\IssueTrackerFeatures\Issues\Requests\Commands\" />
-    <Folder Include="Features\IssueTrackerFeatures\Issues\Requests\Queries\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>

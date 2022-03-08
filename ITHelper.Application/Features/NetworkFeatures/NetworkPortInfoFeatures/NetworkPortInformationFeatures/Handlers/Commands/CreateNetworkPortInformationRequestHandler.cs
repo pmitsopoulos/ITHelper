@@ -31,7 +31,7 @@ namespace ITHelper.Application.Features.NetworkFeatures.NetworkPortInfoFeatures.
             this.httpContextAccessor = httpContextAccessor;
         }
 
-        async Task<BaseResponse> IRequestHandler<CreateNetworkPortInformationRequest, BaseResponse>.Handle(CreateNetworkPortInformationRequest request, CancellationToken cancellationToken)
+        public async Task<BaseResponse> Handle(CreateNetworkPortInformationRequest request, CancellationToken cancellationToken)
         {
             var response = new BaseResponse();
             var validator = new CreateNetworkPortInformationDtoValidator(networkPortInformationRepository);

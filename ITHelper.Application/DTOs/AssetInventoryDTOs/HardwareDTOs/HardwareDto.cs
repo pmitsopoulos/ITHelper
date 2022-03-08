@@ -2,7 +2,7 @@
 using ITHelper.Application.DTOs.AssetInventoryDTOs.ContactDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.DepartmentDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareTypeDTOs;
-using ITHelper.Application.DTOs.AssetInventoryDTOs.SiteDTOs;
+
 using ITHelper.Application.DTOs.AssetInventoryDTOs.UserDTOs;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.VendorDTOs;
 using System;
@@ -40,8 +40,6 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs
 
         public int DepartmentId { get; set; }
         public virtual DepartmentDto Department { get; set; }
-        public int SiteId { get; set; }
-        public virtual SiteDto Site { get; set; }
 
         public DateTime DateAssigned { get; set; }
         public DateTime DiscontinueDate { get; set; }

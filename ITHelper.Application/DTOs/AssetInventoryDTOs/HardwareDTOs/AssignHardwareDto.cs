@@ -10,7 +10,6 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs
     {
         public int UserId { get; set; }
         public int DepartmentId { get; set; }
-        public int SiteId { get; set; }
         public DateTime DateAssigned { get; set; }
     }
 }

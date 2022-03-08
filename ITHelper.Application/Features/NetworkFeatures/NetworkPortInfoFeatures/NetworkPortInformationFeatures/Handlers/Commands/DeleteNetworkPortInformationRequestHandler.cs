@@ -35,6 +35,7 @@ namespace ITHelper.Application.Features.NetworkFeatures.NetworkPortInfoFeatures.
                 try
                 {
                     await networkPortInformationRepository.DeleteAsync(request.Id);
+                    await networkPortInformationRepository.Save();
                     response.Success = true;
                     response.Message = "The specified network port was deleted successfully";
                 }

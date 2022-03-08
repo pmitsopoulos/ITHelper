@@ -27,9 +27,6 @@ namespace ITHelper.Domain.AssetInventoryEntities
 
         public int DepartmentId { get; set; }
         public virtual Department Department { get; set; }
-        public int SiteId { get; set; }
-        public virtual Site Site { get; set; }
-
         public DateTime DateAssigned { get; set; }
         public DateTime DiscontinueDate { get; set; }
 
