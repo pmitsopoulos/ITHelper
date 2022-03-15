@@ -14,11 +14,12 @@ using System.Threading.Tasks;
 namespace ITHelper.Application.Features.IssueTrackerFeatures.IssuesFeatures.Handlers.Commands
 {
     public class CreateIssueRequestHandler : IRequestHandler<CreateIssueRequest, BaseResponse>
-    {
-        private readonly IUnitOfWork unitOfWork;
+    {  
+        private readonly IIssueUnitOfWork unitOfWork;
         private readonly IMapper mapper;
 
-        public CreateIssueRequestHandler(IUnitOfWork unitOfWork, IMapper mapper)
+      
+        public CreateIssueRequestHandler(IIssueUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
             this.mapper = mapper;

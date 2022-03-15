@@ -9,7 +9,5 @@ namespace ITHelper.Application.Contracts.Persistence.AssetInventory
 {
     public interface IUserRepository : IGenericRepository<User>
     {
-        Task<IEnumerable<User>> GetUsersPerSite(int siteId);
-        Task<IEnumerable<User>> GetUsersPerDepartment(int? siteId, int departmentId);
     }
 }

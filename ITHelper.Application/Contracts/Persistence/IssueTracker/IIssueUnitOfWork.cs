@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.Contracts.Persistence.IssueTracker
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IIssueUnitOfWork : IDisposable
     {
         IApplicationSystemRepository ApplicationSystemRepository { get; }
         IIssueRepository IssuesRepository { get; } 

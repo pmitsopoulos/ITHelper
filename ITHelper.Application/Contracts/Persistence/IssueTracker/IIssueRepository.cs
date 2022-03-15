@@ -1,4 +1,5 @@
-﻿using ITHelper.Domain.IssueTrackerEntities;
+﻿using ITHelper.Application.Models.FilterModels.IssueTrackerFilterModels;
+using ITHelper.Domain.IssueTrackerEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,6 @@ namespace ITHelper.Application.Contracts.Persistence.IssueTracker
 {
     public interface IIssueRepository : IGenericRepository<Issue>
     {
-        Task<IEnumerable<Issue>> GetIssuesByApplicationSystem(int systemId);
-        Task<IEnumerable<Issue>> GetExpiredAndPendingIssues();
+        Task<IEnumerable<Issue>> FilteredSearch(IssueFilterModel issueFilterModel);
     }
 }

@@ -16,10 +16,10 @@ namespace ITHelper.Application.Features.IssueTrackerFeatures.ApplicationSystemsF
 {
     public class UpdateApplicationSystemRequestHandler : IRequestHandler<UpdateApplicationSystemRequest, BaseResponse>
     {
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IIssueUnitOfWork unitOfWork;
         private readonly IMapper mapper;
 
-        public UpdateApplicationSystemRequestHandler(IUnitOfWork unitOfWork , IMapper mapper)
+        public UpdateApplicationSystemRequestHandler(IIssueUnitOfWork unitOfWork , IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
             this.mapper = mapper;

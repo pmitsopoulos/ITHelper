@@ -15,10 +15,10 @@ namespace ITHelper.Application.Features.IssueTrackerFeatures.IssuesFeatures.Hand
 {
     public class DeleteIssueRequestHandler : IRequestHandler<DeleteIssueRequest, BaseResponse>
     {
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IIssueUnitOfWork unitOfWork;
         private readonly IMapper mapper;
 
-        public DeleteIssueRequestHandler( IUnitOfWork unitOfWork, IMapper mapper)
+        public DeleteIssueRequestHandler( IIssueUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
             this.mapper = mapper;

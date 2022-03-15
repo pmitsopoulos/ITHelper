@@ -28,9 +28,9 @@ namespace ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs.Validators
                 .NotEqual(default(int))
                 .WithMessage("This asset must be assigned to a contact.");
 
-            RuleFor(h => h.Model).NotNull().NotEmpty().WithMessage("The mmodel of the hardware is required.");
+            RuleFor(h => h.Model).NotNull().NotEmpty().WithMessage("The model of the hardware is required.");
 
-            RuleFor(h => h.SerialNumber).NotNull().NotEmpty().WithMessage("The mmodel of the hardware is required.");
+            RuleFor(h => h.SerialNumber).NotNull().NotEmpty().WithMessage("The model of the hardware is required.");
 
             
 

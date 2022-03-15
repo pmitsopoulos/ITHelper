@@ -14,10 +14,10 @@ namespace ITHelper.Application.Features.IssueTrackerFeatures.ApplicationSystemsF
 {
     public class DeleteApplicationSystemRequestHandler : IRequestHandler<DeleteApplicationSystemRequest, BaseResponse>
     {
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IIssueUnitOfWork unitOfWork;
         private readonly IMapper mapper;
 
-        public DeleteApplicationSystemRequestHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public DeleteApplicationSystemRequestHandler(IIssueUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
             this.mapper = mapper;

@@ -15,10 +15,10 @@ namespace ITHelper.Application.Features.IssueTrackerFeatures.SystemContactsFeatu
 {
     public class DeleteSystemContactRequestHandler : IRequestHandler<DeleteSystemContactRequest, BaseResponse>
     {
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IIssueUnitOfWork unitOfWork;
         private readonly IMapper mapper;
 
-        public DeleteSystemContactRequestHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public DeleteSystemContactRequestHandler(IIssueUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
             this.mapper = mapper;

@@ -11,9 +11,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\AssetInventory\" />
-    <Folder Include="Repositories\IssueTracker\" />
-    <Folder Include="Repositories\NetworkPortInfo\" />
+    <Folder Include="Configurations\NetworkPortInfoConfigurations\" />
+    <Folder Include="Configurations\IssueTrackerConfigurations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
   </ItemGroup>
 
 </Project>

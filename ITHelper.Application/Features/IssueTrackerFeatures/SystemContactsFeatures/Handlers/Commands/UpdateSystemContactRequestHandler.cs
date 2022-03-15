@@ -16,10 +16,10 @@ namespace ITHelper.Application.Features.IssueTrackerFeatures.SystemContactsFeatu
 {
     public class UpdateSystemContactRequestHandler : IRequestHandler<UpdateSystemContactRequest, BaseResponse>
     {
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IIssueUnitOfWork unitOfWork;
         private readonly IMapper mapper;
 
-        public UpdateSystemContactRequestHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public UpdateSystemContactRequestHandler(IIssueUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
             this.mapper = mapper;

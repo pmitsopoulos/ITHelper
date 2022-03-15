@@ -12,7 +12,7 @@ namespace ITHelper.Application.Contracts.Persistence
         Task<IEnumerable<T>> GetAllAsync();
         Task DeleteAsync (int id);
         Task UpdateAsync (T entity);
-        Task CreateAsync (T entity);
+        Task<T> CreateAsync (T entity);
         Task <bool> Exists(int id);
 
         Task <IEnumerable<T>> GetBySearchTermAsync(string searchTerm);
