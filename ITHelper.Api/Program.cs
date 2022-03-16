@@ -1,12 +1,26 @@
 using ITHelper.Application.Contracts.Persistence;
 using ITHelper.Application.Features.NetworkFeatures;
+using ITHelper.Application.Services;
 using ITHelper.Persistence.Repositories.ApiClient;
+using ITHelper.Persistence.Services;
+using ITHelper.Identity.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.ConfigureApplicationServices();
+builder.Services.ConfigurePersistenceServices(builder.Configuration);
+builder.Services.ConfigureIdentityServices(builder.Configuration);
+
+
 builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("DefaultPolicy",
+        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
 
 builder.Services.AddSingleton<PingNetwork>();
 
@@ -28,7 +42,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
+
+app.UseCors("DefaultPolicy");
 
 app.MapControllers();
 

@@ -17,42 +17,50 @@ namespace ITHelper.Persistence.Configurations.AssetInventoryConfigurations
                 new Vendor
                 {
                     Id = 1,
-                    Name = "Dell"
+                    Name = "Dell",
+                    Description = string.Empty
                 },
                 new Vendor
                 {
                     Id = 2,
-                    Name = "HP"
+                    Name = "HP",
+                    Description = string.Empty
                 },
                 new Vendor
                 {
                     Id = 3,
-                    Name = "Lenovo"
+                    Name = "Lenovo",
+                    Description = string.Empty
                 },
                 new Vendor
                 {
                     Id = 4,
-                    Name = "Apple"
+                    Name = "Apple",
+                    Description = string.Empty
                 },
                 new Vendor
                 {
                     Id = 5,
-                    Name = "Samsung"
+                    Name = "Samsung",
+                    Description = string.Empty
                 },
                 new Vendor
                 {
                     Id = 6,
-                    Name = "Xiaomi"
+                    Name = "Xiaomi",
+                    Description = string.Empty
                 },
                 new Vendor
                 {
                     Id = 7,
-                    Name = "Asus"
+                    Name = "Asus",
+                    Description = string.Empty
                 },
                 new Vendor
                 {
                     Id = 8,
-                    Name = "Ricoh"
+                    Name = "Ricoh",
+                    Description = string.Empty
                 }
                 );
         }

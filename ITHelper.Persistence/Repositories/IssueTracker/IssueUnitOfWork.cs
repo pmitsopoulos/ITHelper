@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Persistence.Repositories.IssueTracker
 {
-    public class UnitOfWork : IIssueUnitOfWork
+    public class IssueUnitOfWork : IIssueUnitOfWork
     {
         private readonly ApplicationDbContext applicationDbContext;
         private IIssueRepository _issueRepository;
         private ISystemContactRepository _systemContactRepository;
         private IApplicationSystemRepository _applicationSystemRepository;
 
-        public UnitOfWork(ApplicationDbContext applicationDbContext)
+        public IssueUnitOfWork(ApplicationDbContext applicationDbContext)
         {
             this.applicationDbContext = applicationDbContext;
         }

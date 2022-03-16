@@ -1,6 +1,7 @@
 ﻿using ITHelper.Domain.AssetInventoryEntities;
 using ITHelper.Domain.IssueTrackerEntities;
 using ITHelper.Domain.NetworkPortInfoEntities;
+using ITHelper.Persistence.Configurations.AssetInventoryConfigurations;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,18 @@ namespace ITHelper.Persistence
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+        }
+
+        protected override void OnModelCreating(ModelBuilder  modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ApplyConfiguration(new HardwareTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
+            modelBuilder.ApplyConfiguration(new VendorConfiguration());
         }
 
         //Asset Inventory DbSets

@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.Contracts.Persistence.NetworkPortInfo
 {
-    public interface INetworkPortInformationRepository : IGenericRepository<NetworkPortInformation>
+    public interface INetworkPortInformationRepository : IGenericRepository<NetworkPortInformation> , IGenericUnitOfWork
     {
-        Task Save();
     }
 }

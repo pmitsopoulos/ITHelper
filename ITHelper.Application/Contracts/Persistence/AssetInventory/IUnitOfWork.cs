@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.Contracts.Persistence.AssetInventory
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable , IGenericUnitOfWork
     {
         IVendorRepository VendorRepository { get; } 
         IHardwareRepository HardwareRepository { get; }
@@ -16,6 +16,5 @@ namespace ITHelper.Application.Contracts.Persistence.AssetInventory
         IDepartmentRepository DepartmentRepository { get; }
         IContactRepository ContactRepository { get; }
 
-        Task Save();
     }
 }

@@ -17,8 +17,6 @@
   <ItemGroup>
     <Folder Include="Contracts\Identity\" />
     <Folder Include="Contracts\Infrastructure\" />
-    <Folder Include="Features\CommonFeatures\Handlers\" />
-    <Folder Include="Features\CommonFeatures\Requests\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -30,16 +30,19 @@ namespace ITHelper.Persistence.Configurations.AssetInventoryConfigurations
                 {
                     Id = 3,
                     Name = "Smartphone / Phone",
+                    Description = string.Empty
                 },
                 new HardwareType
                 {
                     Id = 4,
-                    Name = "Tablet"
+                    Name = "Tablet",
+                    Description = string.Empty
                 },
                 new HardwareType
                 {
                     Id = 5,
                     Name = "Printer / Multifunctional",
+                    Description = string.Empty
                 }
                 );
         }

@@ -17,22 +17,26 @@ namespace ITHelper.Persistence.Configurations.AssetInventoryConfigurations
                 new Department
                 {
                     Id = 1,
-                    Name = "Management"
+                    Name = "Management",
+                    Description = string.Empty
                 },
                 new Department
                 {
                     Id = 2,
-                    Name = "Accounting"
+                    Name = "Accounting",
+                    Description = string.Empty
                 },
                 new Department
                 {
                     Id = 3,
-                    Name = "ITC"
+                    Name = "ITC",
+                    Description = string.Empty
                 },
                 new Department
                 {
                     Id = 4,
-                    Name = "Administration"
+                    Name = "Administration",
+                    Description = string.Empty
                 }
                 );
         }

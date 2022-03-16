@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.Contracts.Persistence.IssueTracker
 {
-    public interface IIssueUnitOfWork : IDisposable
+    public interface IIssueUnitOfWork : IDisposable, IGenericUnitOfWork
     {
         IApplicationSystemRepository ApplicationSystemRepository { get; }
         IIssueRepository IssuesRepository { get; } 
         ISystemContactRepository SystemContactRepository { get; }
-
-        Task Save();
     }
 }
