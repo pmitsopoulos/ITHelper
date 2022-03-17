@@ -17,6 +17,23 @@
   <ItemGroup>
     <Folder Include="Contracts\Identity\" />
     <Folder Include="Contracts\Infrastructure\" />
+    <Folder Include="Features\AssetInventoryFeatures\ContactsFeatures\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\ContactsFeatures\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\DepartmentsFeatures\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\DepartmentsFeatures\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareTypesFeatures\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\HardwareTypesFeatures\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\UsersFeatures\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\UsersFeatures\Requests\Queries\" />
+    <Folder Include="Features\AssetInventoryFeatures\VendorsFeatures\Requests\Commands\" />
+    <Folder Include="Features\AssetInventoryFeatures\VendorsFeatures\Requests\Queries\" />
+    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystemsFeatures\Requests\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\ApplicationSystemsFeatures\Requests\Queries\" />
+    <Folder Include="Features\IssueTrackerFeatures\IssuesFeatures\Requests\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\SystemContactsFeatures\Requests\Commands\" />
+    <Folder Include="Features\IssueTrackerFeatures\SystemContactsFeatures\Requests\Queries\" />
+    <Folder Include="Features\NetworkFeatures\NetworkPortInfoFeatures\NetworkPortInformationFeatures\Requests\Commands\" />
+    <Folder Include="Features\NetworkFeatures\NetworkPortInfoFeatures\NetworkPortInformationFeatures\Requests\Queries\" />
   </ItemGroup>
 
   <ItemGroup>

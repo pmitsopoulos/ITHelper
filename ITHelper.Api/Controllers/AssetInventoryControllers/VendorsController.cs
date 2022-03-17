@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ITHelper.Api.Controllers.AssetInventoryControllers
 {
-    [Route("api/[controller]")]
+    [Route("AssetInventory/[controller]")]
     [ApiController]
     public class VendorsController : ControllerBase
     {

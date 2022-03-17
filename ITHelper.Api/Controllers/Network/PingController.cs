@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ITHelper.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("NetworkTools/[controller]")]
     public class PingController : ControllerBase
     {
         private readonly PingNetwork ping;

@@ -6,9 +6,9 @@ using ITHelper.Domain.AssetInventoryEntities;
 
 namespace ITHelper.Application.Features.AssetInventoryFeatures.ContactsFeatures.Handlers.Queries
 {
-    public class GetContactRequestHandler : GenericGetByIdRequestHandler<IContactRepository, ContactDto, Contact>
+    public class GetAllContactsRequestHandler : GenericGetAllRequestHandler<IContactRepository, ContactDto, Contact>
     {
-        public GetContactRequestHandler(IContactRepository repository, IMapper mapper)
+        public GetAllContactsRequestHandler(IContactRepository repository, IMapper mapper) 
             : base(repository, mapper)
         {
         }

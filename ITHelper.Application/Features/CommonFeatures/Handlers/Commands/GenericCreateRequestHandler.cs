@@ -44,7 +44,7 @@ namespace ITHelper.Application.Features.CommonFeatures.Handlers.Commands
 
             var validationResult = await validator.ValidateAsync(request.EntityTBC);
 
-            if(!validationResult.IsValid)
+            if(validationResult.IsValid != true)
             {
                 response.Message = $"{typeof(TDomainEntity).Name} creation failed.";
                 response.Success = false;

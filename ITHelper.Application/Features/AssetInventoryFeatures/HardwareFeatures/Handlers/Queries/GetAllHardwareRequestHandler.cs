@@ -3,13 +3,17 @@ using ITHelper.Application.Contracts.Persistence.AssetInventory;
 using ITHelper.Application.DTOs.AssetInventoryDTOs.HardwareDTOs;
 using ITHelper.Application.Features.CommonFeatures.Handlers.Queries;
 using ITHelper.Domain.AssetInventoryEntities;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ITHelper.Application.Features.AssetInventoryFeatures.HardwareFeatures.Handlers.Queries
 {
-    public class GetHardwareRequestHandler : GenericGetByIdRequestHandler<IHardwareRepository, HardwareDto, Hardware>
+    public class GetAllHardwareRequestHandler : GenericGetAllRequestHandler<IHardwareRepository, HardwareDto, Hardware>
     {
-        public GetHardwareRequestHandler(IHardwareRepository repository, IMapper mapper)
+        public GetAllHardwareRequestHandler(IHardwareRepository repository, IMapper mapper) 
             : base(repository, mapper)
         {
         }

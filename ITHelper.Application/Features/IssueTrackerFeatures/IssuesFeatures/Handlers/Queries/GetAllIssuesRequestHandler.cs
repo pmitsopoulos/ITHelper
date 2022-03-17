@@ -8,9 +8,9 @@ using ITHelper.Domain.IssueTrackerEntities;
 
 namespace ITHelper.Application.Features.IssueTrackerFeatures.IssuesFeatures.Handlers.Queries
 {
-    public class GetIssueRequestHandler : GenericGetByIdRequestHandler<IIssueRepository, IssueDto, Issue>
+    public class GetAllIssuesRequestHandler : GenericGetAllRequestHandler<IIssueRepository, IssueDto, Issue>
     {
-        public GetIssueRequestHandler(IIssueRepository repository, IMapper mapper) : base(repository, mapper)
+        public GetAllIssuesRequestHandler(IIssueRepository repository, IMapper mapper) : base(repository, mapper)
         {
         }
     }

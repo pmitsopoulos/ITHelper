@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ITHelper.Application.Features.CommonFeatures.Requests.Commands
 {
-    public class GenericDeleteRequest : IRequest<BaseResponse>
+    public class GenericDeleteRequest<TEntity> : IRequest<BaseResponse>
     {
         public int Id { get; set; }
     }

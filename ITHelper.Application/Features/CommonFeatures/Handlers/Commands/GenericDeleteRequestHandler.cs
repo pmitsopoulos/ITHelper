@@ -14,30 +14,31 @@ using System.Threading.Tasks;
 namespace ITHelper.Application.Features.CommonFeatures.Handlers.Commands
 {
     public class GenericDeleteRequestHandler<TUnitOfWork, TRepository, TDomainEntity>
-        : IRequestHandler<GenericDeleteRequest, BaseResponse>
+        : IRequestHandler<GenericDeleteRequest<TDomainEntity>, BaseResponse>
         where TUnitOfWork : IGenericUnitOfWork
         where TRepository : IGenericRepository<TDomainEntity>
         where TDomainEntity : class
     {
-        private readonly IGenericUnitOfWork genericUnitOfWork;
+        private readonly TUnitOfWork genericUnitOfWork;
         private readonly TRepository repository;
 
-        public GenericDeleteRequestHandler(IGenericUnitOfWork genericUnitOfWork, IMapper mapper,TRepository repository)
+        public GenericDeleteRequestHandler(TUnitOfWork genericUnitOfWork, IMapper mapper,TRepository repository)
         {
             this.genericUnitOfWork = genericUnitOfWork;
             this.repository = repository;
         }
 
-        public async Task<BaseResponse> Handle(GenericDeleteRequest request, CancellationToken cancellationToken)
+
+        public async Task<BaseResponse> Handle(GenericDeleteRequest<TDomainEntity> request, CancellationToken cancellationToken)
         {
             var response = new BaseResponse();
 
             var entityExists = await repository.Exists(request.Id);
+            var res = await repository.GetByIdAsync(request.Id);
 
-            if (!entityExists)
+            if (entityExists != true)
             {
                 response.Message = $"This {typeof(TDomainEntity).Name} does not exist";
-                response.Errors.Add(new NotFoundException(nameof(TDomainEntity), request.Id).Message);
                 response.Success = false;
             }
             else

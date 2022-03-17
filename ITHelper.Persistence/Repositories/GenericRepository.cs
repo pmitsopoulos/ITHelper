@@ -50,21 +50,21 @@ namespace ITHelper.Persistence.Repositories
         public async Task<IEnumerable<T>> GetBySearchTermAsync(string searchTerm)
         {
             var properties = typeof(T).GetProperties().Where(p=>p.PropertyType == typeof(string));
-            var entities = await GetAllAsync();
-            List<T> result = new List<T>();
-            
-            foreach(var item in entities)
+            var entities =  GetAllAsync().Result.Where(e =>
             {
-                foreach(var property in properties)
+                var exists = false;
+                foreach (var property in properties)
                 {
-                    if(property.GetValue(item,null).ToString().Contains(searchTerm))
+                    exists = property.GetValue(e).ToString().ToLower().Contains(searchTerm.ToLower());
+                    if (exists)
                     {
-                        result.Add(item);
                         break;
                     }
                 }
-            }
-            return result;
+                return exists;
+            });
+            
+            return entities;
                 
         }
 

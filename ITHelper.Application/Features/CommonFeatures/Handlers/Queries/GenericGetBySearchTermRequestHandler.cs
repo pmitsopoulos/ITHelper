@@ -27,7 +27,7 @@ namespace ITHelper.Application.Features.CommonFeatures.Handlers.Queries
         }
         public async Task<List<TEntityDto>> Handle(GenericGetBySearchTermRequest<TEntityDto> request, CancellationToken cancellationToken)
         {
-            var result = await repository.GetAllAsync();
+            var result = await repository.GetBySearchTermAsync(request.SearchTerm);
 
             if (result == null)
             {

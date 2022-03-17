@@ -46,17 +46,16 @@ namespace ITHelper.Application.Features.CommonFeatures.Handlers.Commands
 
             var entityExists = await repository.Exists(request.EntityTBU.Id);
 
-            if(!entityExists)
+            if(entityExists != true)
             {
                 response.Message = $"The specified {typeof(TDomainEntity).Name} does not exist";
                 response.Success = false;
-                response.Errors.Add(new NotFoundException(nameof(TDomainEntity), request.EntityTBU.Id).Message);
             }
             else
             {
                 var validationResult = await validator.ValidateAsync(request.EntityTBU);
 
-                if(!validationResult.IsValid)
+                if(validationResult.IsValid != true)
                 {
                     response.Message = $"{typeof(TDomainEntity).Name} is invalid";
                     response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
