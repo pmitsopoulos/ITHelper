@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ITHelper.Api.Controllers.Network
 {
     [ApiController]
-    [Route("NetworkTools/[controller]")]
+    [Route("api/NetworkTools/[controller]")]
     public class VendorMacController : ControllerBase
     {
         private readonly IApiMethodHelper client;

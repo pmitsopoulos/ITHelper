@@ -20,8 +20,4 @@
     <ProjectReference Include="..\ITHelper.Persistence\ITHelper.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\IssueTrackerControllers\" />
-  </ItemGroup>
-
 </Project>
